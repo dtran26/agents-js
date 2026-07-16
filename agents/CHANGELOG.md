@@ -1,5 +1,21 @@
 # @livekit/agents
 
+## 1.5.3
+
+### Patch Changes
+
+- Restart chunked TTS retries with a fresh attempt queue so retried synthesis uses a fresh request ID and does not write to a closed failed-attempt queue. - [#1994](https://github.com/livekit/agents-js/pull/1994) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
+- Honor `ToolFlag.IGNORE_ON_ENTER` for tools nested inside `Toolset`s. - [#2011](https://github.com/livekit/agents-js/pull/2011) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
+- Fix modality-aware instruction templates to collapse identical variants and avoid duplicate rendered output. - [#2030](https://github.com/livekit/agents-js/pull/2030) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
+- Preserve partial LLM response telemetry and generated function calls on every inference exit path. - [#2048](https://github.com/livekit/agents-js/pull/2048) ([@toubatbrian](https://github.com/toubatbrian))
+
+- Add a beta DTMF sending tool that publishes to the active agent session room. - [#2010](https://github.com/livekit/agents-js/pull/2010) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
+- Add `speed` to xAI TTS inference options. - [#2028](https://github.com/livekit/agents-js/pull/2028) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
 ## 1.5.2
 
 ## 1.5.1
